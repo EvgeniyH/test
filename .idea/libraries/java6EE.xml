@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="java6EE">
+    <CLASSES>
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.annotation.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.ejb.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.jms.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.persistence.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.resource.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.servlet.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://D:/work/gtk/oldeisvo/xmlReception/xmlReception/lib/javax.transaction.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

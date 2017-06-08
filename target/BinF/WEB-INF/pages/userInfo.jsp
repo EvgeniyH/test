@@ -1,4 +1,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="ftm" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: Jenya
@@ -31,6 +33,23 @@
 <spring:form action="/" method="get">
     <button type="submit">Вернуться к вводу данных</button>
 </spring:form>
-<button type="button">Показать предыдущие записи</button>
+<%--<button type="button">Показать предыдущие записи</button>--%>
+<div>
+    <table border="1" cellspacing="3" cellpadding="3" rules="all" style="font: 11px Arial;">
+        <tr>
+            <td>Идентификатор</td>
+            <td>Ф.И.О</td>
+            <td>Дата и время ввода</td>
+        </tr>
+        <c:forEach items="${datas}" var="user">
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.fio}</td>
+                <td><ftm:formatDate value="${user.date}" pattern="dd.MM.yyyy HH:mm:ss"/></td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+
 </body>
 </html>

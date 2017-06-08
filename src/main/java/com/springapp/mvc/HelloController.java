@@ -30,6 +30,15 @@ public class HelloController {
 		user.setDate(new Timestamp(System.currentTimeMillis()));
 		Utils.update(user, fileUrl);
 		modelAndView.addObject("userJSP", user);
+		modelAndView.addObject("datas",Utils.readList(fileUrl));
+		return modelAndView;
+	}
+
+	@RequestMapping(value = "/getData", method = RequestMethod.POST)
+	public ModelAndView dataFromFile() throws FileNotFoundException {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("userInfo");
+		modelAndView.addObject("datas",Utils.readList(fileUrl));
 		return modelAndView;
 	}
 }
